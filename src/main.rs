@@ -87,7 +87,7 @@ async fn run_app() -> anyhow::Result<()> {
                 ),
         );
 
-    let listener = TcpListener::bind("0.0.0.0:3000").await?;
+    let listener = TcpListener::bind("0.0.0.0:3001").await?;
 
     if let Err(e) = axum::serve(listener, app).await {
         error!(error=?e);

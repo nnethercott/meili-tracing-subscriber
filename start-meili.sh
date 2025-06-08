@@ -10,5 +10,5 @@ MEILISEARCH_IMAGE="getmeili/meilisearch"
 
 docker run \
   -p 7700:7700 \
-  -e MEILI_MASTER_KEY=password \
   -d --rm "$MEILISEARCH_IMAGE"
+  # -e MEILI_MASTER_KEY=password \

@@ -19,7 +19,7 @@ impl Credentials {
 
         reqwest::Client::new()
             .post(index_endpoint)
-            .bearer_auth(&self.master_key)
+            // .bearer_auth(&self.master_key)
     }
 }
 
