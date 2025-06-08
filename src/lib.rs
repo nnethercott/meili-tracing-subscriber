@@ -1,6 +1,6 @@
 use reqwest::RequestBuilder;
 use serde_json::{Value, json};
-use std::{io::Write, sync::atomic::{AtomicU16, Ordering}};
+use std::io::Write; 
 
 /// Struct storing your meilisearch credentials
 pub struct Credentials {
@@ -49,8 +49,7 @@ impl Write for MeiliWriter {
         if let Some(obj) = json.as_object_mut(){
             obj.insert("id".into(), json!(self.curr_id));
         }
-
-        dbg!("{:?}", &json);
+        // dbg!("{:?}", &json);
 
         // spawn off task to notify meili
         let req = self.creds.build_request(self.index).json(&json);
