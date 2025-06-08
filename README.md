@@ -5,3 +5,4 @@ An example showing how to bootstrap tracing's json formatter to persist logs in 
 
 ![alt-text](./assets/meili-subscriber.png)
 
+![malt-text](./assets/meili-dashboard.png)
